@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: var(--primary-text-color);
+	font-family: 'Open Sans', sans-serif;
+	font-size: var(--font-size);
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* 불필요한 리스트 스타일 없애기 */
+ul,
+ol {
+	list-style: none;
+}
+
+/* 링크 스타일 초기화 */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* 테이블 스타일 초기화 */
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/* 이미지 크기 조정 */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* input, button 등의 폼 요소 스타일 초기화 */
+input,
+button,
+textarea,
+select {
+	background: transparent;
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+p {
+	margin: 0;
+}
+
+.a11y-hidden {
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+}

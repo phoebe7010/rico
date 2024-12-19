@@ -9,147 +9,192 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/main.css">
+  <script src="./custom.js" defer></script>
 </head>
 
 <body>
 
-  <header id="header">
-    <p class="tit">LIGHT COORDINATOR</p>
+  <div class="container">
+    <header id="header">
+      <!-- 슬로건 -->
+      <p class="tit">LIGHT COORDINATOR</p>
 
-    <h1>
-      <a href="index.html">
-        <img src="./img/logo.png" alt="리코블라인드" />
-        <span class="a11y-hidden">리코블라인드</span>
-      </a>
-    </h1>
+      <!-- 로고 -->
+      <h1>
+        <a href="index.html">
+          <img src="./images/common/logo.png" alt="리코블라인드" />
+          <span class="a11y-hidden">리코블라인드</span>
+        </a>
+      </h1>
 
+      <!-- gnb 메뉴  -->
+      <nav id="gnb">
+        <ul>
+          <li>
+            <a href=" ">ABOUT US</a>
+            <ul class="subMenu">
+              <li><a href=" ">CEO' MESSAGE</a></li>
+              <li><a href=" ">ORGANIZATION CHART</a></li>
+              <li><a href=" ">HISTORY</a></li>
+              <li><a href=" ">CATALOG</a></li>
+            </ul>
+          </li>
+          <li><a href=" ">OUR BRAND</a></li>
+          <li>
+            <a href=" ">PRODUCT<span></span></a>
+            <ul class="subMenu">
+              <li><a href=" ">COMBI BLINDS</a></li>
+              <li><a href=" ">TRIPLE SHADE</a></li>
+              <li><a href=" ">ROLL SCREENS</a></li>
+              <li><a href=" ">HONEYCOMB SHADE</a></li>
+              <li><a href=" ">VERTICAL BLINDS</a></li>
+              <li><a href=" ">WOOD BLINDS</a></li>
+            </ul>
+          </li>
+          <li><a href=" ">BUSINESS</a></li>
+          <li><a href=" ">CONTACT</a></li>
+          <li><a href="">RICO NEWS</a></li>
+        </ul>
+      </nav>
 
-    <nav id="gnb">
-      <ul>
-        <li>
-          <a href="http://ricoblinds.com/about/aboutus.php">ABOUT US</a>
-          <ul class="subMenu">
-            <li><a href="http://ricoblinds.com/about/aboutus.php">CEO' MESSAGE</a></li>
-            <li><a href="http://ricoblinds.com/about/organization.php">ORGANIZATION CHART</a></li>
-            <li><a href="http://ricoblinds.com/about/history.php">HISTORY</a></li>
-            <li><a href="http://ricoblinds.com/about/catalog.php">CATALOG</a></li>
-          </ul>
-        </li>
-        <li><a href="http://ricoblinds.com/ourbrand.php">OUR BRAND</a></li>
-        <li>
-          <a href="http://ricoblinds.com/product/combi.php">PRODUCT<span></span></a>
-          <ul class="subMenu">
-            <li><a href="http://ricoblinds.com/product/combi.php">COMBI BLINDS</a></li>
-            <li><a href="http://ricoblinds.com/product/triple.php">TRIPLE SHADE</a></li>
-            <li><a href="http://ricoblinds.com/product/roll.php">ROLL SCREENS</a></li>
-            <li><a href="http://ricoblinds.com/product/honeycomb.php">HONEYCOMB SHADE</a></li>
-            <li><a href="http://ricoblinds.com/product/vertical.php">VERTICAL BLINDS</a></li>
-            <li><a href="http://ricoblinds.com/product/wood.php">WOOD BLINDS</a></li>
-          </ul>
-        </li>
-        <li><a href="http://ricoblinds.com/business.php">BUSINESS</a></li>
-        <li><a href="http://ricoblinds.com/contact.php">CONTACT</a></li>
-        <li><a href="http://ricoblinds.com/gnuboard5/notice">RICO NEWS</a></li>
-      </ul>
+      <button id="menubar" class="btn-call">
+        <span>메뉴</span>
+      </button>
+    </header>
+
+    <aside class="mobile">
+      <nav class="mobile__menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a href="#about">ABOUT US</a>
+            <ul class="subMenu" id="about">
+              <li><a href=" ">CEO' MESSAGE</a></li>
+              <li><a href="">ORGANIZATION CHART</a></li>
+              <li><a href="">HISTORY</a></li>
+              <li><a href="">CATALOG</a></li>
+            </ul>
+          </li>
+          <li class="menu__list-item">
+            <a href="">OUR BRAND</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#product">PRODUCT</a>
+            <ul class="subMenu" id="product">
+              <li><a href="">COMBI BLINDS</a></li>
+              <li><a href="">TRIPLE SHADE</a></li>
+              <li><a href="">ROLL SCREENS</a></li>
+              <li><a href="">HONEYCOMB SHADE</a></li>
+              <li><a href="">VERTICAL BLINDS</a></li>
+              <li><a href="">WOOD BLINDS</a></li>
+            </ul>
+          </li>
+          <li class="menu__list-item"><a href="">BUSINESS</a></li>
+          <li class="menu__list-item"><a href="">CONTACT</a></li>
+          <li class="menu__list-item"><a href="">RICO NEWS</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- 상단 바 언어셀렉박스  -->
+    <nav id="select">
+      <select onchange="location.href=this.value">
+        <option>LANGUAGE</option>
+        <option value=""> KOREAN</option>
+        <option value="">ENGLIGH</option>
+      </select>
     </nav>
 
-    <div id="menubar">
-      <span>메뉴</span>
-    </div>
-    <div class="mWrap">
-      <div>
-        <ul id="mobile_gnb">
-          <li>
-            <a href="#">ABOUT US<span></span></a>
-            <ul class="subMenu">
-              <li><a href="http://ricoblinds.com/about/aboutus.php">CEO' MESSAGE</a></li>
-              <li><a href="http://ricoblinds.com/about/organization.php">ORGANIZATION CHART</a></li>
-              <li><a href="http://ricoblinds.com/about/history.php">HISTORY</a></li>
-              <li><a href="http://ricoblinds.com/about/catalog.php">CATALOG</a></li>
-            </ul>
-          </li>
-          <li><a href="http://ricoblinds.com/ourbrand.php">OUR BRAND<span></span></a></li>
-          <li><a href="#">PRODUCT<span></span></a>
-            <ul class="subMenu">
-              <li><a href="http://ricoblinds.com/product/combi.php">COMBI BLINDS</a></li>
-              <li><a href="http://ricoblinds.com/product/triple.php">TRIPLE SHADE</a></li>
-              <li><a href="http://ricoblinds.com/product/roll.php">ROLL SCREENS</a></li>
-              <li><a href="http://ricoblinds.com/product/honeycomb.php">HONEYCOMB SHADE</a></li>
-              <li><a href="http://ricoblinds.com/product/vertical.php">VERTICAL BLINDS</a></li>
-              <li><a href="http://ricoblinds.com/product/wood.php">WOOD BLINDS</a></li>
-            </ul>
-          </li>
-          <li><a href="http://ricoblinds.com/business.php">BUSINESS<span></span></a></li>
-          <li><a href="http://ricoblinds.com/contact.php">CONTACT<span></span></a></li>
-          <li><a href="http://ricoblinds.com/gnuboard5/notice">RICO NEWS<span></span></a></li>
-        </ul>
-      </div>
-    </div>
-
-  </header>
-
-  <!-- 상단 바 언어셀렉박스  -->
-  <!-- <nav id="select">
-    <select onchange="location.href=this.value">
-      <option>LANGUAGE</option>
-      <option value="http://ricoblinds.com/ko/index.php"> KOREAN </option>
-      <option value="http://ricoblinds.com/index.php">ENGLIGH</option>
-    </select>
-  </nav> -->
+    <main class="home">
+      <div class="home__card card1">
+        <div class="home__card-thumbnail">
 
 
-
-
-
-
-
-  <main>
-
-  </main>
-
-  <footer class="footer">
-    <!-- <div class="footerWrap">
-      <div class="fm_wrap">
-        <ul class="fm_site">
-          <li>
-            <button class="btn">FAMILY SITE
-              <span class="navi_down"></span>
-            </button>
-            <div class="fm_conWrap">
-              <ul class="fm_con">
-                <li><a href="http://www.aircareblinds.com" target="_blank">AIR CARE</a></li>
-                <li><a href="http://www.nugunadiy.com" target="_blank">NUGUNA</a></li>
-                <li><a href="https://buyunga.com" target="_blank">BUYUNGA</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="snsSet">
-        <div>
-          <a href="https://www.instagram.com/rico_blind/" target="_blank">
-            <img src="http://ricoblinds.com/img/insta.svg" alt="instagram" />
-          </a>
-          <a href="#">
-            <img src="http://ricoblinds.com/img/fb.svg" alt="facebook" />
-          </a>
-          <a href="#">
-            <img src="http://ricoblinds.com/img/more.svg" alt="more" />
-          </a>
+          <div class="home__card-text">
+            LIGHT COORDINATOR
+          </div>
         </div>
       </div>
-      <div class="pp">
-        <a href="http://www.ricoblinds.com/privacy.html" target="_blank">Privacy Policy</a>
+      <div class="home__card">
+        <div class="home__card-text">
+          <h2>Design a space light!</h2>
+          <p>Ricoblinds designs a world with beautiful lights!
+            Now, find a special experience
+            for your own space.</p>
+        </div>
       </div>
-      <div class="address">
-        <span class="b">Rico Blinds</span> TEL: 82-31-798-3123
-        <span class="nl">80-10, Maejari-gil, Gwangju-si, Gyeonggi-do, Korea </span>
+      <div class="home__card">
+        <div class="home__card-link">
+          <a href="#">ABOUT US</a>
+        </div>
       </div>
-    </div> -->
+      <div class="home__card">
+        <div class="home__card-thumbnail">
+        </div>
+      </div>
+      <div class="box5">
+        <img src="./img/a-5_1.jpg" alt="">
+      </div>
+      <div class="box6">
+        <img src="./img/a-6.jpg" alt="">
+      </div>
+      <div class="box7">box7</div>
+      <div class="box8">
+        <img src="./img/ab-air.png" alt="">
+      </div>
+      <div class="box9">box9</div>
+      <div class="box10">box10</div>
+      <div class="box11">
+        <img src="./img/a-11.jpg" alt="">
+      </div>
+    </main>
 
-  </footer>
+    <footer class="footer">
+      footer
+      <!-- <div class="footerWrap">
+        <div class="fm_wrap">
+          <ul class="fm_site">
+            <li>
+              <button class="btn">FAMILY SITE
+                <span class="navi_down"></span>
+              </button>
+              <div class="fm_conWrap">
+                <ul class="fm_con">
+                  <li><a href="http://www.aircareblinds.com" target="_blank">AIR CARE</a></li>
+                  <li><a href="http://www.nugunadiy.com" target="_blank">NUGUNA</a></li>
+                  <li><a href="https://buyunga.com" target="_blank">BUYUNGA</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="snsSet">
+          <div>
+            <a href="https://www.instagram.com/rico_blind/" target="_blank">
+              <img src="http://ricoblinds.com/img/insta.svg" alt="instagram" />
+            </a>
+            <a href="#">
+              <img src="http://ricoblinds.com/img/fb.svg" alt="facebook" />
+            </a>
+            <a href="#">
+              <img src="http://ricoblinds.com/img/more.svg" alt="more" />
+            </a>
+          </div>
+        </div>
+        <div class="pp">
+          <a href="http://www.ricoblinds.com/privacy.html" target="_blank">Privacy Policy</a>
+        </div>
+        <div class="address">
+          <span class="b">Rico Blinds</span> TEL: 82-31-798-3123
+          <span class="nl">80-10, Maejari-gil, Gwangju-si, Gyeonggi-do, Korea </span>
+        </div>
+      </div> -->
+
+    </footer>
+  </div>
 </body>
 
 </html>
