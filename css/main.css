@@ -18,20 +18,10 @@ body {
 	grid-template-rows: 35px repeat(4, 1fr);
 }
 
+/* 헤더 */
 #header {
 	grid-column: 1/2;
 	grid-row: 1/6;
-}
-
-.footer {
-	grid-column: 1/2;
-	grid-row: 5/6;
-}
-
-/* 항목별 레이아웃 */
-/* 헤더 */
-#header {
-	height: 100%;
 	transition: all 0.5s;
 	position: relative;
 	display: flex;
@@ -136,6 +126,7 @@ body {
 		display: none;
 	}
 }
+
 .btn-call {
 	width: 3.2rem;
 	height: 2rem;
@@ -498,6 +489,100 @@ main {
 		&:hover {
 			.home__card-thumbnail {
 				background-image: url(../images/home/home-11-hover.jpg);
+			}
+		}
+	}
+}
+
+.footer {
+	grid-column: 1/2;
+	grid-row: 5/6;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: center;
+
+	.familysite {
+		width: 14rem;
+		height: 2.5rem;
+
+		.familysite__container {
+			width: 100%;
+			height: 100%;
+
+			.familysite__container-inner {
+				width: 100%;
+				height: 100%;
+				position: relative;
+
+				button {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					font-size: 1.2rem;
+					color: var(--primary-text-color);
+					z-index: 10;
+					border: 1px solid #aaa;
+					cursor: pointer;
+
+					.navi_down {
+						position: absolute;
+						right: 1rem;
+						top: 50%;
+						height: 0;
+						width: 0;
+						margin-top: -2px;
+						border-style: solid;
+						border-color: transparent transparent var(--primary-color) transparent;
+						border-width: 0 3px 4px 3px;
+					}
+					&.on .navi_down {
+						border-color: var(--primary-color) transparent transparent transparent;
+						border-width: 4px 3px 0 3px;
+					}
+				}
+
+				.familysite__list-container {
+					position: absolute;
+					top: 0px;
+					left: 0;
+					width: 100%;
+					overflow: hidden;
+					height: 0px;
+					transition: 0.5s;
+
+					&.on {
+						top: -108px;
+						height: 108px;
+					}
+
+					.familysite__list {
+						z-index: 2;
+						.familysite__list-item {
+							height: 36px;
+
+							a {
+								display: block;
+								width: 100%;
+								height: 100%;
+								font-size: 1.2rem;
+								line-height: 36px;
+								color: var(--primary-text-color);
+								text-align: center;
+							}
+
+							&:hover a {
+								background: #333;
+								color: var(--basic-text-color);
+							}
+						}
+					}
+				}
 			}
 		}
 	}
