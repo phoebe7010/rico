@@ -1,1 +1,3 @@
-<img src="./images/1zvi8.jpg">
+QR코드
+
+https://m.site.naver.com/1zvi8
