@@ -1,19 +1,21 @@
 :root {
 	--primary-color: #fe5955;
-	--primary-bg-color: #fff;
 	--primary-text-color: #444;
-	--primary-border-color: #333;
 
-	--secondary-text-color: #bbb;
-	--secondary-bg-color: #ababab;
-	--secondary-border-color: #eaeaea;
-
-	--footer-bg-color: #f8f8f8;
-	--fixed-light-color: #e0e0e0;
+	--basic-text-color: #fff;
+	--slogan-text-color: #ccc;
 
 	--gnb-color: #666;
 	--gnb-hover-color: #000;
+	--gnb-bg-color: #000;
 	--gnb-bar-color: #f27f24;
+
+	--home-bg-color: #fe5955;
+	--home-bg2-color: #ababab;
+	--home-hover-color: #f27f24;
+
+	--nav-bg-color: #212121;
+	--nav-color: #fff;
 
 	--eng: 'Open Sans', serif;
 	--kor: 'Noto Sans KR', sans-serif;
