@@ -46,7 +46,7 @@ const handleMobileGnb = () => {
 //family site click 이벤트
 const handleFamilySite = () => {
 	const familySiteBtn = document.querySelector('.btn-familysite');
-	const familySiteList = document.querySelector('.familysite__list-container');
+	const familySiteList = document.querySelector('.familysite__container');
 	familySiteBtn.addEventListener('click', () => {
 		familySiteBtn.classList.toggle('on');
 		familySiteList.classList.toggle('on');
