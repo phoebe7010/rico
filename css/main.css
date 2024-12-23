@@ -771,7 +771,7 @@ main {
 @media screen and (max-width: 480px) {
 	main {
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: 30rem repeat(3, 15rem);
+		grid-template-rows: 25rem repeat(3, 15rem);
 
 		.home__card-link {
 			display: flex;
