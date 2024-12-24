@@ -37,8 +37,15 @@
 		a {
 			display: block;
 			width: 15rem;
-			height: 4.5rem;
-			background: url(../images/common/logo.png) no-repeat center/contain;
+			/* height: 4.5rem; */
+			/* background: url(../images/common/logo.png) no-repeat center/contain; */
+
+			img {
+				width: 100%;
+			}
+			.mlogo {
+				display: none;
+			}
 		}
 	}
 }
@@ -691,8 +698,14 @@ main {
 		h1 {
 			a {
 				width: 15rem;
-				height: 3.9rem;
-				background-image: url(../images/common/mlogo.png);
+				/* height: 3.9rem; */
+				/* background-image: url(../images/common/mlogo.png); */
+				.logo {
+					display: none;
+				}
+				.mlogo {
+					display: block;
+				}
 			}
 		}
 	}
