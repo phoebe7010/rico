@@ -43,9 +43,6 @@
 			img {
 				width: 100%;
 			}
-			.mlogo {
-				display: none;
-			}
 		}
 	}
 }
@@ -700,12 +697,6 @@ main {
 				width: 15rem;
 				/* height: 3.9rem; */
 				/* background-image: url(../images/common/mlogo.png); */
-				.logo {
-					display: none;
-				}
-				.mlogo {
-					display: block;
-				}
 			}
 		}
 	}

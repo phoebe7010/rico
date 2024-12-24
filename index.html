@@ -26,8 +26,10 @@
       <!-- 로고 -->
       <h1>
         <a href="index.html">
-          <img src="./images/common/logo.png" alt="리코블라인드로고" class="logo">
-          <img src="./images/common/mlogo.png" alt="리코블라인드로고" class="mlogo">
+          <picture>
+            <source srcset="./images/common/mlogo.png" media="(max-width:768px)">
+            <img src="./images/common/logo.png" alt="리코블라인드로고">
+          </picture>
           <span class="a11y-hidden">리코블라인드</span>
         </a>
       </h1>
