@@ -2,7 +2,7 @@
 const handleMobile = () => {
 	const btnCall = document.querySelector('.btn-call');
 	const mobile = document.querySelector('.mobile');
-	const moGnbLis = document.querySelectorAll('.menu__list-item');
+	const moGnbLis = document.querySelectorAll('.mobile__list-item');
 
 	const toggleMobile = () => {
 		let isOn = btnCall.classList.contains('on');
