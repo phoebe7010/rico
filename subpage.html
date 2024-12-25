@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="shortcut icon" href="images/common/favicon.ico" type="image/x-icon">
-  <title>Rico blinds</title>
-  <!-- 구글 폰트  -->
+  <title>Document</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
-  <!-- 중요 CSS 미리 로드 -->
-  <link rel="preload" href="./styles/base/variables.css" as="style" />
-  <link rel="preload" href="./styles/base/layout.css" as="style" />
-
-  <!-- 스타일시트 -->
-  <link rel="stylesheet" href="./css/base/reset.css">
-  <link rel="stylesheet" href="./css/base/variables.css">
-  <link rel="stylesheet" href="./css/base/common.css">
-  <link rel="stylesheet" href="./css/pages/index.css">
-  <!-- 메인 JS 파일 -->
-  <script src="./js/base/common.js" defer></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./custom.js" defer></script>
 </head>
 
 <body>
-
   <div class="container">
     <header id="header">
       <!-- 슬로건 -->
@@ -94,68 +85,15 @@
       </select>
     </nav>
 
-    <main class="home">
-
-      <div class="card card1">
-        <div class="card-thumbnail"></div>
-        <div class="card-text">
-          LIGHT COORDINATOR
-        </div>
+    <main>
+      <div class="category">
+        <h2>ABOUT US</h2>
       </div>
-      <div class="card card2">
-        <div class="card-text">
-          <h2>Design a space light!</h2>
-          <p>Ricoblinds designs a world with beautiful lights! <br>
-            Now, find a special experience <br>
-            for your own space.</p>
-        </div>
+      <div class="title">
+        <h3>CEO' MESSAGE</h3>
+        <p class="description">Welcome to Rico Blinds</p>
       </div>
-      <div class="card card3">
-        <div class="card-link">
-          <a href="#">ABOUT US</a>
-        </div>
-      </div>
-      <div class="card card4">
-        <div class="card-thumbnail">
-        </div>
-      </div>
-      <div class="card card5">
-        <div class="card-thumbnail">
-        </div>
-      </div>
-      <div class="card card6">
-        <div class="card-thumbnail">
-        </div>
-      </div>
-      <div class="card card7">
-        <div class="card-link">
-          <a href="#">BUSINESS</a>
-        </div>
-      </div>
-      <div class="card card8">
-        <div class="card-thumbnail">
-        </div>
-        <div class="card-link">
-          <a href="#">OUR BRAND</a>
-        </div>
-      </div>
-      <div class="card card9">
-        <div class="card-link">
-          <a href="#">PRODUCT</a>
-        </div>
-      </div>
-      <div class="card card10">
-        <div class="card-link">
-          <a href="#">CONTACT</a>
-        </div>
-      </div>
-      <div class="card card11">
-        <div class="card-thumbnail">
-        </div>
-      </div>
-
     </main>
-
     <footer class="footer">
       <div class="familysite">
         <button class="btn-familysite">FAMILY SITE
@@ -222,7 +160,7 @@
         </ul>
       </nav>
     </aside>
-  </div>
+  </div> <!-- container end -->
 </body>
 
 </html>

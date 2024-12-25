@@ -6,14 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="shortcut icon" href="../images/common/favicon.ico" type="image/x-icon">
-  <title>Document</title>
+  <title>Rico blinds</title>
+  <!-- 구글 폰트  -->
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/variables.css">
-  <link rel="stylesheet" href="../css/main.css">
-  <script src="../custom.js" defer></script>
+  <!-- 중요 CSS 미리 로드 -->
+  <link rel="preload" href="../styles/base/variables.css" as="style" />
+  <link rel="preload" href="../styles/base/layout.css" as="style" />
+
+  <!-- 스타일시트 -->
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/variables.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/pages/index.css">
+  <!-- 메인 JS 파일 -->
+  <script src="../js/base/common.js" defer></script>
 </head>
 
 <body>
