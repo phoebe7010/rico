@@ -34,12 +34,14 @@
 
 	/* 로고  */
 	h1 {
+		width: 17rem;
 		a {
 			display: block;
-			width: 15rem;
+			width: 100%;
 
 			img {
 				width: 100%;
+				object-fit: contain;
 			}
 		}
 	}
@@ -628,6 +630,11 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
+	#header {
+		h1 {
+			width: 15rem;
+		}
+	}
 	#gnb {
 		.gnb__list {
 			gap: 1.5rem;
@@ -671,13 +678,6 @@ main {
 }
 
 @media screen and (max-width: 767px) {
-	#header {
-		h1 {
-			a {
-				width: 15rem;
-			}
-		}
-	}
 	#gnb {
 		display: none;
 	}
