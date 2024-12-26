@@ -6,10 +6,10 @@ const headerTemplate = `
 
 
         <h1>
-          <a href="index.html">
+          <a href="ko/index.html">
             <picture>
-              <source srcset="./images/common/mlogo.png" media="(max-width:768px)">
-              <img src="./images/common/logo.png" alt="리코블라인드로고">
+              <source srcset="../images/common/mlogo.png" media="(max-width:768px)">
+              <img src="../images/common/logo.png" alt="리코블라인드로고">
             </picture>
             <span class="a11y-hidden">리코블라인드</span>
           </a>

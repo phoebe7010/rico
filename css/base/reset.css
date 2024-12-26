@@ -1,25 +1,27 @@
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
+	unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.0.woff2) format('woff2');
+	unicode-range: U+AC00- U+D7A3;
+}
+
 *,
 *::before,
 *::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-@font-face {
-	font-family: 'Noto Sans KR';
-	font-style: normal;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.0.woff2) format('woff2');
-	unicode-range: U+AC00-D7A3;
-}
-
-@font-face {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: 400;
-	font-stretch: 100%;
-	src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4taVIGxA.woff2) format('woff2');
-	unicode-range: U+0041-005A, U+0061-007A, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E, U+0030-0039;
+	font-family: 'Open Sans', 'Noto Sans KR';
 }
 
 html {
@@ -29,14 +31,12 @@ html {
 
 body {
 	color: var(--primary-text-color);
-	font-family: 'Open Sans', sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/* 불필요한 리스트 스타일 없애기 */
 ul,
 ol {
 	list-style: none;
@@ -84,6 +84,6 @@ button {
 	clip: rect(1px, 1px, 1px, 1px);
 }
 
-.kor {
-	font-family: 'Noto Sans KR';
-}
+/* .kor {
+	font-family: 'Noto Sans KR', serif;
+} */
