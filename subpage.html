@@ -10,16 +10,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/variables.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <script src="./custom.js" defer></script>
+
+  <link rel="stylesheet" href="./css/base/reset.css">
+  <link rel="stylesheet" href="./css/base/variables.css">
+  <link rel="stylesheet" href="./css/base/common.css">
+
 </head>
 
 <body>
   <div class="container">
     <header id="header">
-
     </header>
 
     <nav id="select">
@@ -39,73 +39,19 @@
         <p class="description">Welcome to Rico Blinds</p>
       </div>
     </main>
+
+    <!-- footer -->
     <footer class="footer">
-      <div class="familysite">
-        <button class="btn-familysite">FAMILY SITE
-          <span class="navi_down"></span>
-        </button>
-        <div class="familysite__container">
-          <ul class="familysite__list">
-            <li class="familysite__list-item">
-              <a href="http://www.aircareblinds.com" target="_blank">AIR CARE</a>
-            </li>
-            <li class="familysite__list-item">
-              <a href="http://www.nugunadiy.com" target="_blank">NUGUNA</a>
-            </li>
-            <li class="familysite__list-item">
-              <a href="https://buyunga.com" target="_blank">BUYUNGA</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="privacy">
-        <a href="http://www.ricoblinds.com/privacy.html" target="_blank">Privacy Policy</a>
-      </div>
-
-      <div class="address__container">
-        <span class="company">Rico Blinds</span>
-        <span class="tel">TEL: 82-31-798-3123</span>
-        <span class="address">80-10, Maejari-gil, Gwangju-si, Gyeonggi-do, Korea </span>
-      </div>
-
-
     </footer>
 
+    <!-- mobile 메뉴  -->
     <aside class="mobile">
-      <nav class="mobile__menu">
-        <ul class="mobile__list">
-          <li class="mobile__list-item">
-            <a href="#">ABOUT US</a>
-            <ul class="mobile__subMenu">
-              <li><a href=" ">CEO' MESSAGE</a></li>
-              <li><a href="">ORGANIZATION CHART</a></li>
-              <li><a href="">HISTORY</a></li>
-              <li><a href="">CATALOG</a></li>
-            </ul>
-          </li>
-          <li class="mobile__list-item">
-            <a href="">OUR BRAND</a>
-          </li>
-          <li class="mobile__list-item">
-            <a href="#">PRODUCT</a>
-            <ul class="mobile__subMenu">
-              <li><a href="">COMBI BLINDS</a></li>
-              <li><a href="">TRIPLE SHADE</a></li>
-              <li><a href="">ROLL SCREENS</a></li>
-              <li><a href="">HONEYCOMB SHADE</a></li>
-              <li><a href="">VERTICAL BLINDS</a></li>
-              <li><a href="">WOOD BLINDS</a></li>
-            </ul>
-          </li>
-          <li class="mobile__list-item"><a href="">BUSINESS</a></li>
-          <li class="mobile__list-item"><a href="">CONTACT</a></li>
-          <li class="mobile__list-item"><a href="">RICO NEWS</a></li>
-        </ul>
-      </nav>
     </aside>
   </div> <!-- container end -->
+
+  <!-- 메인 JS 파일 -->
+  <script src="./js/base/layout.js"></script>
+  <script src="./js/base/common.js"></script>
 </body>
 
 </html>
