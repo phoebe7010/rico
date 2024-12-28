@@ -1,9 +1,6 @@
 const headerTemplate = `
  <div class="header__inner">
-
-
         <p class="tit">LIGHT COORDINATOR</p>
-
 
         <h1>
           <a href="ko/index.html">
@@ -14,7 +11,6 @@ const headerTemplate = `
             <span class="a11y-hidden">리코블라인드</span>
           </a>
         </h1>
-
 
         <nav id="gnb">
           <ul class="gnb__list">

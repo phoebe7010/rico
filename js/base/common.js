@@ -1,4 +1,10 @@
-//모바일 햄버거 메뉴 클릭시
+document.addEventListener('DOMContentLoaded', () => {
+	handleMobile();
+	handleMobileGnb();
+	handleFamilySite();
+});
+
+//모바일 햄버거 버튼 클릭시 메뉴 열리기 (세부메뉴 닫기)
 const handleMobile = () => {
 	const btnCall = document.querySelector('.btn-call');
 	const mobile = document.querySelector('.mobile');
@@ -7,20 +13,18 @@ const handleMobile = () => {
 	const toggleMobile = () => {
 		let isOn = btnCall.classList.contains('on');
 		if (!isOn) {
-			btnCall.classList.toggle('on', true);
-			mobile.classList.toggle('on', true);
+			btnCall.classList.add('on');
+			mobile.classList.add('on');
 		} else {
-			btnCall.classList.toggle('on', false);
-			mobile.classList.toggle('on', false);
+			btnCall.classList.remove('on');
+			mobile.classList.remove('on');
 		}
 		moGnbLis.forEach((li) => {
 			li.classList.remove('on');
 		});
 	};
 
-	btnCall.addEventListener('click', () => {
-		toggleMobile();
-	});
+	btnCall.addEventListener('click', toggleMobile);
 };
 
 //mobile li클릭시 서브메뉴 활성화
@@ -28,7 +32,7 @@ const handleMobileGnb = () => {
 	const mobileList = document.querySelector('.mobile__list');
 	const mobileItem = mobileList.querySelectorAll('.mobile__list-item');
 
-	mobileItem.forEach((li, idx) => {
+	mobileItem.forEach((li) => {
 		li.addEventListener('click', (e) => {
 			let isOn = e.currentTarget.classList.contains('on');
 			if (!isOn) {
@@ -52,7 +56,3 @@ const handleFamilySite = () => {
 		familySiteList.classList.toggle('on');
 	});
 };
-
-handleMobile();
-handleMobileGnb();
-handleFamilySite();

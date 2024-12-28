@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 400;
@@ -13,7 +13,7 @@
 	font-weight: 400;
 	src: url(https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoyeLGC5nwuDo-KBTUm6CryotyJROlrnQ.0.woff2) format('woff2');
 	unicode-range: U+AC00- U+D7A3;
-}
+} */
 
 *,
 *::before,
@@ -84,6 +84,6 @@ button {
 	clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* .kor {
+.kor {
 	font-family: 'Noto Sans KR', serif;
-} */
+}
