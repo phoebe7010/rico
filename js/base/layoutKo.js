@@ -56,6 +56,13 @@ const headerKoTemplate = `
       </div>
 `;
 
+const languageKoTemplate = `
+<select onchange="location.href=this.value">
+        <option>LANGUAGE</option>
+        <option value=""> KOREAN</option>
+        <option value="">ENGLIGH</option>
+      </select>`;
+
 const mobileAsideKoTemplate = `
  <nav class="mobile__menu">
         <ul class="mobile__list">
@@ -125,7 +132,7 @@ const footerKoTemplate = `
 
 document.addEventListener('DOMContentLoaded', () => {
 	document.querySelector('#header').innerHTML = headerKoTemplate;
+	document.querySelector('.language').innerHTML = languageKoTemplate;
 	document.querySelector('.mobile').innerHTML = mobileAsideKoTemplate;
-
 	document.querySelector('.footer').innerHTML = footerKoTemplate;
 });

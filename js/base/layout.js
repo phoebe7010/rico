@@ -55,6 +55,13 @@ const headerTemplate = `
       </div>
 `;
 
+const languageTemplate = `
+<select onchange="location.href=this.value">
+        <option>LANGUAGE</option>
+        <option value=""> KOREAN</option>
+        <option value="">ENGLIGH</option>
+      </select>`;
+
 const mobileAsideTemplate = `
  <nav class="mobile__menu">
         <ul class="mobile__list">
@@ -123,6 +130,7 @@ const footerTemplate = `
 
 document.addEventListener('DOMContentLoaded', () => {
 	document.querySelector('#header').innerHTML = headerTemplate;
+	document.querySelector('.language').innerHTML = languageTemplate;
 	document.querySelector('.mobile').innerHTML = mobileAsideTemplate;
 
 	document.querySelector('.footer').innerHTML = footerTemplate;

@@ -269,7 +269,7 @@
 	}
 }
 
-#select {
+.language {
 	grid-column: 2;
 	grid-row: 1;
 	background-color: var(--nav-bg-color);
@@ -442,7 +442,7 @@ main {
 		}
 	}
 
-	#select {
+	.language {
 		grid-column: 1;
 	}
 

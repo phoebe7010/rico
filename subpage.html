@@ -8,45 +8,79 @@
   <link rel="shortcut icon" href="images/common/favicon.ico" type="image/x-icon">
   <title>subPage</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="./css/base/reset.css">
   <link rel="stylesheet" href="./css/base/variables.css">
   <link rel="stylesheet" href="./css/base/common.css">
+  <link rel="stylesheet" href="css/base/subpage.css">
 
 </head>
 
 <body>
   <div class="container">
-    <header id="header">
-    </header>
+    <header id="header"></header>
 
-    <nav id="select">
-      <select onchange="location.href=this.value">
-        <option>LANGUAGE</option>
-        <option value=""> KOREAN</option>
-        <option value="">ENGLIGH</option>
-      </select>
-    </nav>
+    <nav class="language"></nav>
 
-    <main>
-      <div class="category">
-        <h2>ABOUT US</h2>
-      </div>
-      <div class="title">
-        <h3>CEO' MESSAGE</h3>
-        <p class="description">Welcome to Rico Blinds</p>
+    <main class="sublayout">
+      <div class="category-wrap">
+        <div class="category">
+          <h2>ABOUT US</h2>
+        </div>
+        <div class="subCategory">
+          <nav>
+            <ul>
+              <li><a href="">CEO' MESSAGE</a></li>
+              <li><a href="">COMPANY</a></li>
+              <li><a href="">ORGANIZATION CHART</a></li>
+              <li><a href="">HISTORY</a></li>
+              <li><a href="">CATALOG</a></li>
+            </ul>
+          </nav>
+        </div> <!-- subCategory end -->
+      </div> <!--category-wrap end -->
+
+      <div class="contents-wrap">
+        <div class="title">
+          <h3>CEO' MESSAGE</h3>
+          <p class="description">Welcome to Rico Blinds</p>
+        </div>
+
+        <div class="content">
+          <div class="content-inner">
+            <h2>Rico Blinds is Korea's a leading window furnishing company offering affordable prices, uncompromised
+              customer service.</h2>
+
+            <p>
+              Rico Blinds has achieved a constant growth in product sales and customers loyalty. by providing only high
+              quality and innovative products. designed for both individual and commercial maket. Providing competitive.
+              affordable and top quality products is what the reputation at Rico Blinds has been built from. Seeking to
+              meet the ever changing demands of the maket. Rico Blinds are always checked throughout the stage of
+              production to ensure a high level of quality. We take pride in our business and every client is important
+              to us, we will take the extra mile to make sure you are completely satisfied with your window tratments.
+            </p>
+            <img src="./images/about/ceo/sign.svg" alt="KIM SANG-GON">
+          </div>
+        </div>
+
+      </div> <!-- contents end -->
+      <div class="image-wrap">
+        <div class="key-thumbnail">
+          <img src="./images/about/ceo/ceo.jpg" alt="ceo">
+        </div>
+        <div class="second-thumbnail">
+          <img src="./images/about/ceo/bg_ceo.png" alt="">
+        </div>
       </div>
     </main>
 
     <!-- footer -->
-    <footer class="footer">
-    </footer>
+    <footer class="footer"></footer>
 
     <!-- mobile 메뉴  -->
-    <aside class="mobile">
-    </aside>
+    <aside class="mobile"></aside>
   </div> <!-- container end -->
 
   <!-- 메인 JS 파일 -->
