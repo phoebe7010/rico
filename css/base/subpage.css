@@ -6,7 +6,7 @@
 .category-wrap {
 	.category {
 		width: 100%;
-		height: 220px;
+		height: 22rem;
 		background-color: var(--primary-color);
 		padding: 3rem;
 		display: flex;
@@ -18,11 +18,12 @@
 			color: var(--basic-text-color);
 		}
 	}
+
 	.subCategory {
 		width: 100%;
-		height: calc(100% - 220px);
+		height: calc(100vh - 3.5rem - 22rem);
 		background-color: var(--home-bg2-color);
-		padding: 3rem;
+		padding: 3rem 4rem;
 
 		nav ul li {
 			margin-bottom: 3rem;
@@ -32,9 +33,10 @@
 				color: var(--basic-text-color);
 				padding: 1rem 0;
 			}
+
 			&.on a {
 				font-weight: bold;
-				color: var(--primary-color);
+				color: var(--primary-text-color);
 			}
 		}
 	}
@@ -57,6 +59,7 @@
 		font-size: 3.8rem;
 		color: #000;
 	}
+
 	p {
 		width: 100%;
 		background-color: #fff;
@@ -68,40 +71,27 @@
 	}
 }
 
-.content {
-	width: 100%;
-}
-
 .ceo {
 	width: 100%;
 	padding: 5rem;
 	display: grid;
 	place-items: center;
-}
-.message {
-	max-width: 40rem;
-	display: grid;
-	place-items: center;
-	gap: 5rem;
 
-	h2 {
-		font-size: 2rem;
-		color: var(--primary-text-colo);
-	}
-	p {
-		color: var(--second-text-color);
-		font-size: 1.4rem;
-	}
+	.message {
+		max-width: 40rem;
+		display: grid;
+		place-items: center;
+		gap: 4rem;
 
-	&::after {
-		content: '';
-		display: block;
-		width: 25rem;
-		height: 22rem;
-		background: url(../../images/about/ceo/bg_ceo.png) no-repeat center/cover;
-		position: absolute;
-		bottom: 0;
-		right: 0;
+		h2 {
+			font-size: 2rem;
+			color: var(--primary-text-colo);
+		}
+
+		p {
+			color: var(--second-text-color);
+			font-size: 1.4rem;
+		}
 	}
 }
 
@@ -118,9 +108,18 @@
 		background-color: var(--primary-color);
 	}
 
+	&::after {
+		content: '';
+		display: block;
+		width: 25rem;
+		height: 22rem;
+		background: url(../../images/about/ceo/bg_ceo.png) no-repeat center/ auto 102%;
+		translate: -100% 0;
+	}
+
 	.key-thumbnail {
 		width: 100%;
-		height: calc(100% - 44rem);
+		height: calc(100vh - 3.5rem - 44rem);
 
 		img {
 			width: 100%;
@@ -128,18 +127,137 @@
 			object-fit: cover;
 		}
 	}
-	.second-thumbnail {
+}
+
+@media screen and (max-width: 1600px) {
+	.sublayout {
+		display: grid;
+		grid-template-columns: 25rem auto 25rem;
+	}
+
+	.category-wrap {
+		.category {
+			width: 100%;
+			height: 22rem;
+			background-color: var(--primary-color);
+			padding: 3rem;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+
+			h2 {
+				font-size: 2rem;
+				color: var(--basic-text-color);
+			}
+		}
+
+		.subCategory {
+			width: 100%;
+			height: calc(100vh - 3.5rem - 9rem - 22rem);
+			background-color: var(--home-bg2-color);
+			padding: 3rem 4rem;
+
+			nav ul li {
+				margin-bottom: 3rem;
+
+				a {
+					font-size: 1.4rem;
+					color: var(--basic-text-color);
+					padding: 1rem 0;
+				}
+
+				&.on a {
+					font-weight: bold;
+					color: var(--primary-text-color);
+				}
+			}
+		}
+	}
+
+	.title {
 		width: 100%;
 		height: 22rem;
-		overflow: hidden;
-		background: url(../../images/about/ceo/bg_ceo.png) no-repeat center/cover;
-		translate: -100% 0;
+		background-color: #ccc;
+		text-align: center;
+		padding: 7rem 5% 5rem;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		flex-wrap: wrap;
 
-		img {
+		h3 {
+			font-family: 'Roboto Condensed';
+			font-weight: 700;
+			font-size: 3.8rem;
+			color: #000;
+		}
+
+		p {
 			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			scale: 1.01;
+			background-color: #fff;
+			color: var(--second-text-color);
+			padding: 0.5rem;
+			font-size: 1.4rem;
+			font-weight: bold;
+			border-radius: 2rem;
+		}
+	}
+
+	.ceo {
+		width: 100%;
+		padding: 5rem;
+		display: grid;
+		place-items: center;
+
+		.message {
+			max-width: 40rem;
+			display: grid;
+			place-items: center;
+			gap: 4rem;
+
+			h2 {
+				font-size: 2rem;
+				color: var(--primary-text-colo);
+			}
+
+			p {
+				color: var(--second-text-color);
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	.image-wrap {
+		position: relative;
+		width: 100%;
+		background-color: var(--home-bg2-color);
+
+		&::before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 22rem;
+			background-color: var(--primary-color);
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			width: 25rem;
+			height: 22rem;
+			background: url(../../images/about/ceo/bg_ceo.png) no-repeat center/ auto 102%;
+			translate: -100% 0;
+		}
+
+		.key-thumbnail {
+			width: 100%;
+			height: calc(100vh - 3.5rem - 9rem - 44rem);
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
 		}
 	}
 }
