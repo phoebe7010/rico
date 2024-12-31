@@ -12,7 +12,7 @@
 }
 
 /* 헤더 */
-#header {
+.header {
 	grid-column: 1;
 	grid-row: 1/-1;
 
@@ -404,7 +404,7 @@ main {
 	}
 
 	/* 헤더 */
-	#header {
+	.header {
 		grid-row: 2/3;
 
 		.header__inner {
@@ -469,7 +469,7 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
-	#header {
+	.header {
 		h1 {
 			width: 15rem;
 		}

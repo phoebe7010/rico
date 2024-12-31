@@ -1,40 +1,38 @@
-document.addEventListener('DOMContentLoaded', () => {
-	handleMobile();
-	handleMobileGnb();
-	handleFamilySite();
-});
-
 //모바일 햄버거 버튼 클릭시 메뉴 열리기 (세부메뉴 닫기)
-const handleMobile = () => {
-	const btnCall = document.querySelector('.btn-call');
+const handleMobile = (e) => {
 	const mobile = document.querySelector('.mobile');
-	const moGnbLis = document.querySelectorAll('.mobile__list-item');
 
-	const toggleMobile = () => {
-		let isOn = btnCall.classList.contains('on');
-		if (!isOn) {
-			btnCall.classList.add('on');
-			mobile.classList.add('on');
-		} else {
-			btnCall.classList.remove('on');
-			mobile.classList.remove('on');
+	header.addEventListener('click', (e) => {
+		const btnCall = header.querySelector('.btn-call');
+		const moGnbLis = mobile.querySelectorAll('.mobile__list-item');
+
+		if (e.target != btnCall) return;
+		if (btnCall && moGnbLis) {
+			let isOn = btnCall.classList.contains('on');
+
+			if (!isOn) {
+				btnCall.classList.add('on');
+				mobile.classList.add('on');
+			} else {
+				btnCall.classList.remove('on');
+				mobile.classList.remove('on');
+			}
+			moGnbLis.forEach((li) => {
+				li.classList.remove('on');
+			});
 		}
-		moGnbLis.forEach((li) => {
-			li.classList.remove('on');
-		});
-	};
-
-	btnCall.addEventListener('click', toggleMobile);
+	});
 };
 
 //mobile li클릭시 서브메뉴 활성화
-const handleMobileGnb = () => {
-	const mobileList = document.querySelector('.mobile__list');
-	const mobileItem = mobileList.querySelectorAll('.mobile__list-item');
+const handleMobileGnb = (e) => {
+	const mobile = document.querySelector('.mobile');
 
-	mobileItem.forEach((li) => {
-		li.addEventListener('click', (e) => {
-			let isOn = e.currentTarget.classList.contains('on');
+	mobile.addEventListener('click', (e) => {
+		const mobileItem = mobile.querySelectorAll('.mobile__list-item');
+
+		mobileItem.forEach((li) => {
+			let isOn = e.target.parentElement.classList.contains('on');
 			if (!isOn) {
 				for (let el of mobileItem) {
 					el.classList.remove('on');
@@ -48,11 +46,27 @@ const handleMobileGnb = () => {
 };
 
 //family site click 이벤트
-const handleFamilySite = () => {
-	const familySiteBtn = document.querySelector('.btn-familysite');
-	const familySiteList = document.querySelector('.familysite__container');
-	familySiteBtn.addEventListener('click', () => {
-		familySiteBtn.classList.toggle('on');
-		familySiteList.classList.toggle('on');
+const handleFamilySite = (e) => {
+	const footer = document.querySelector('.footer');
+
+	footer.addEventListener('click', (e) => {
+		const familySiteBtn = footer.querySelector('.btn-familysite');
+		const familySiteList = footer.querySelector('.familysite__container');
+
+		if (e.target != familySiteBtn) return;
+		if (familySiteBtn && familySiteList) {
+			familySiteBtn.classList.toggle('on');
+			familySiteList.classList.toggle('on');
+		}
 	});
 };
+
+/* document.addEventListener('DOMContentLoaded', () => {
+	handleMobile();
+	handleMobileGnb();
+	handleFamilySite();
+}); */
+
+handleMobile();
+handleMobileGnb();
+handleFamilySite();
