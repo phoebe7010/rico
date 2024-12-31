@@ -61,12 +61,6 @@ const handleFamilySite = (e) => {
 	});
 };
 
-/* document.addEventListener('DOMContentLoaded', () => {
-	handleMobile();
-	handleMobileGnb();
-	handleFamilySite();
-}); */
-
 handleMobile();
 handleMobileGnb();
 handleFamilySite();
