@@ -1,11 +1,12 @@
 .sublayout {
+	height: calc(100vh - 3.5rem);
 	display: grid;
 	grid-template-columns: 25rem auto 25rem;
+	grid-template-rows: 22rem auto 22rem;
 }
 
 .category-wrap {
 	.category {
-		width: 100%;
 		height: 22rem;
 		background-color: var(--primary-color);
 		padding: 3rem;
@@ -20,7 +21,6 @@
 	}
 
 	.subCategory {
-		width: 100%;
 		height: calc(100vh - 3.5rem - 22rem);
 		background-color: var(--home-bg2-color);
 		padding: 3rem 4rem;
@@ -42,62 +42,65 @@
 	}
 }
 
-.title {
-	width: 100%;
-	height: 22rem;
-	background-color: #ccc;
-	text-align: center;
-	padding: 7rem 5% 5rem;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	flex-wrap: wrap;
-
-	h3 {
-		font-family: 'Roboto Condensed';
-		font-weight: 700;
-		font-size: 3.8rem;
-		color: #000;
-	}
-
-	p {
+.contents-wrap {
+	.title {
 		width: 100%;
-		background-color: #fff;
-		color: var(--second-text-color);
-		padding: 0.5rem;
-		font-size: 1.4rem;
-		font-weight: bold;
-		border-radius: 2rem;
-	}
-}
+		height: 22rem;
+		background-color: #ccc;
+		text-align: center;
+		padding: 7rem 5% 5rem;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		flex-wrap: wrap;
 
-.ceo {
-	width: 100%;
-	padding: 5rem;
-	display: grid;
-	place-items: center;
-
-	.message {
-		max-width: 40rem;
-		display: grid;
-		place-items: center;
-		gap: 4rem;
-
-		h2 {
-			font-size: 2rem;
-			color: var(--primary-text-colo);
+		h3 {
+			font-family: 'Roboto Condensed';
+			font-weight: 700;
+			font-size: 3.8rem;
+			color: #000;
 		}
 
 		p {
+			width: 100%;
+			background-color: #fff;
 			color: var(--second-text-color);
+			padding: 0.5rem;
 			font-size: 1.4rem;
+			font-weight: bold;
+			border-radius: 2rem;
+		}
+	}
+
+	.ceo {
+		width: 100%;
+		padding: 5rem;
+		display: grid;
+		place-items: center;
+
+		.message {
+			max-width: 40rem;
+			display: grid;
+			place-items: center;
+			gap: 4rem;
+
+			h2 {
+				font-size: 2rem;
+				color: var(--primary-text-colo);
+			}
+
+			p {
+				color: var(--second-text-color);
+				font-size: 1.4rem;
+			}
 		}
 	}
 }
 
 .image-wrap {
+	grid-column: 3;
+	grid-row: 1/-1;
 	position: relative;
-	width: 100%;
 	background-color: var(--home-bg2-color);
 
 	&::before {
