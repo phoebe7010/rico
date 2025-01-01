@@ -1,4 +1,4 @@
-main {
+.home {
 	display: grid;
 	grid-template-columns: 30% 30% 20% 20%;
 	grid-template-rows: repeat(4, 1fr);
@@ -182,7 +182,7 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
-	main {
+	.home {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 40rem repeat(5, 20rem);
 
@@ -218,7 +218,7 @@ main {
 }
 
 @media screen and (max-width: 767px) {
-	main {
+	.home {
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: 35rem repeat(3, 20rem);
 
@@ -272,7 +272,7 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-	main {
+	.home {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: 25rem repeat(3, 15rem);
 
