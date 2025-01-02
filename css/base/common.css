@@ -384,8 +384,8 @@ main {
 		.privacy a:hover {
 			color: var(--primary-color);
 		}
-		.company {
-			font-weight: bold;
+		h2 {
+			font-size: 1.1rem;
 		}
 	}
 }
@@ -401,7 +401,8 @@ main {
 		grid-row: 2/3;
 
 		.header__inner {
-			padding: 1.5rem 2rem;
+			height: 100%;
+			padding: 0 2rem;
 			flex-direction: row;
 			justify-content: space-between;
 			gap: 0;

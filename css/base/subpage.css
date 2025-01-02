@@ -27,9 +27,9 @@
 	flex-wrap: wrap;
 
 	h3 {
-		font-family: 'Roboto Condensed';
 		font-weight: 700;
 		font-size: 3.8rem;
+		text-transform: uppercase;
 		color: #000;
 	}
 
