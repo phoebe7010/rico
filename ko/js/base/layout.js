@@ -13,5 +13,5 @@ function callData(data, el) {
 
 callData('part/header.html', header);
 callData('part/language.html', language);
-callData('part/footerKo.html', footer);
+callData('part/footer.html', footer);
 callData('part/mobile.html', mobile);
