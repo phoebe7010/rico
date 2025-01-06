@@ -6,10 +6,22 @@
 
 .organization {
 	height: 100%;
-	max-height: calc(100vh - 3.5rem - 22rem);
+	min-height: calc(100vh - 3.5rem - 22rem);
+
 	display: grid;
 	place-content: center;
 	padding: 3rem;
+
+	.image-container {
+		width: 100%;
+		height: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 }
 
 @media screen and (max-width: 1600px) {
@@ -28,7 +40,7 @@
 	}
 
 	.organization {
-		min-height: calc(52.6rem + 3rem);
+		max-height: none;
 	}
 }
 
@@ -48,6 +60,12 @@
 	.content {
 		grid-column: 1 / -1;
 		grid-row: 2 / -1;
+	}
+
+	.organization {
+		min-height: auto;
+		place-content: start center;
+		padding-bottom: 10rem;
 	}
 
 	.right {

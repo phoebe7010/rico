@@ -6,6 +6,7 @@
 	grid-template-columns: 15% 85%;
 	grid-template-rows: 3.5rem auto minmax(min-content, max-content);
 	transition: all 0.5s;
+	min-height: 76.8rem;
 }
 
 /* 헤더 */
