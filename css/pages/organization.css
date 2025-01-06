@@ -41,12 +41,6 @@
 		grid-column: 1;
 	}
 
-	.organization {
-		padding: 3rem;
-		padding-bottom: 10rem;
-		min-height: auto;
-	}
-
 	.deco {
 		display: none;
 	}
