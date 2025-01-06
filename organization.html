@@ -6,24 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="shortcut icon" href="images/common/favicon.ico" type="image/x-icon">
-  <title>ABOUT</title>
+  <title>ORGANIZATION CHART</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
   <!-- 중요 CSS 미리 로드 -->
-  <link rel="preload" href="./css/base/variables.css" as="style" />
+  <!-- <link rel="preload" href="./css/base/variables.css" as="style" /> -->
 
   <link rel="stylesheet" href="./css/base/reset.css">
   <link rel="stylesheet" href="./css/base/variables.css">
   <link rel="stylesheet" href="./css/base/common.css">
-  <link rel="stylesheet" href="./css/pages/about.css">
+  <link rel="stylesheet" href="./css/base/subpage.css">
+  <link rel="stylesheet" href="./css/pages/organization.css">
 
+  <!-- swiper js cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- 메인 JS 파일 -->
   <script src="./js/base/layout.js" defer></script>
   <script src="./js/base/common.js" defer></script>
-  <!-- <script src="./js/page/about.js" defer></script> -->
+
 </head>
 
 <body>
@@ -32,14 +36,14 @@
 
     <nav class="language"></nav>
 
-    <main class="sublayout about__sublayout">
+    <main class="sublayout organization__sublayout">
       <div class="category">
         <h2>ABOUT US</h2>
       </div>
 
       <div class="title">
-        <h3>CEO' MESSAGE</h3>
-        <p>Welcome to Rico Blinds</p>
+        <h3>ORGANIZATION CHART</h3>
+        <p>COMPANY SYSTEM</p>
       </div>
 
       <div class="deco right1"></div>
@@ -47,9 +51,9 @@
       <div class="subCategory">
         <nav>
           <ul>
-            <li class="on"><a href="">CEO' MESSAGE</a></li>
+            <li><a href="">CEO' MESSAGE</a></li>
             <li><a href="">COMPANY</a></li>
-            <li><a href="">ORGANIZATION CHART</a></li>
+            <li class="on"><a href="">ORGANIZATION CHART</a></li>
             <li><a href="">HISTORY</a></li>
             <li><a href="">CATALOG</a></li>
           </ul>
@@ -58,34 +62,14 @@
 
       <div class="content">
         <!-- 컨텐츠 부분  -->
-        <div class="ceo">
-          <div class="message">
-            <h2>Rico Blinds is Korea's a leading window furnishing company offering affordable prices, uncompromised
-              customer service.</h2>
-
-            <p>
-              Rico Blinds has achieved a constant growth in product sales and customers loyalty. by providing only
-              high
-              quality and innovative products. designed for both individual and commercial maket. Providing
-              competitive.
-              affordable and top quality products is what the reputation at Rico Blinds has been built from. Seeking
-              to
-              meet the ever changing demands of the maket. Rico Blinds are always checked throughout the stage of
-              production to ensure a high level of quality. We take pride in our business and every client is
-              important
-              to us, we will take the extra mile to make sure you are completely satisfied with your window tratments.
-            </p>
-            <img src="./images/about/ceo/sign.svg" alt="KIM SANG-GON">
-          </div>
-          <div class="bg-container">
-            <img src="./images/about/ceo/bg_ceo.png" alt="">
-          </div>
+        <div class="organization">
+          <img src="images/about/organization/orgEn.svg" alt="">
         </div>
       </div>
 
       <div class="image-container right">
         <div class="thumbnail">
-          <img src="./images/about/ceo/ceo.jpg" alt="ceo">
+          <img src="./images/about/organization/org02.jpg" alt="">
         </div>
       </div>
     </main>

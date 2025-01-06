@@ -81,7 +81,7 @@
 }
 
 .company {
-	height: 10%;
+	height: 100%;
 	max-height: calc(100vh - 3.5rem - 22rem);
 	display: grid;
 	grid-template-columns: 1fr 30%;
@@ -225,6 +225,9 @@
 		grid-row: 2 / -1;
 	}
 	.company {
+		.slide {
+			min-height: 50rem;
+		}
 		.swiper-slide {
 			.swiper-slide__inner {
 				grid-template-columns: 1fr 1fr;
