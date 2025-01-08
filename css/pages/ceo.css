@@ -1,7 +1,8 @@
-.about__sublayout {
+.layout {
 	display: grid;
 	grid-template-columns: 25rem auto 25rem;
 	grid-template-rows: 22rem auto;
+	height: calc(100vh - 3.5rem);
 }
 
 .category {
@@ -129,13 +130,13 @@
 }
 
 @media screen and (max-width: 1600px) {
-	.about__sublayout {
+	.layout {
 		height: auto;
 	}
 }
 
 @media screen and (max-width: 1280px) {
-	.about__sublayout {
+	.layout {
 		grid-template-columns: auto 25rem;
 	}
 
@@ -163,7 +164,7 @@
 }
 
 @media screen and (max-width: 767px) {
-	.about__sublayout {
+	.layout {
 		grid-template-columns: 25rem auto minmax(auto, 25rem);
 		grid-template-rows: 22rem 22rem auto;
 	}
@@ -211,7 +212,7 @@
 }
 
 @media screen and (max-width: 480px) {
-	.about__sublayout {
+	.layout {
 		grid-template-columns: 25rem auto minmax(auto, 25rem);
 		grid-template-rows: 22rem 22rem auto;
 	}

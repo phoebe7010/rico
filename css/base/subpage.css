@@ -1,10 +1,13 @@
-.sublayout {
+/*서브페이지에서 language select 과 header를 제외한 하단 컨텐츠 */
+/* 전체 감싼 main */
+.layout {
 	display: grid;
 	grid-template-columns: 25rem auto 25rem;
-	grid-template-rows: 22rem auto;
+	grid-template-rows: 22rem 1fr;
 }
-
+/* main에서 상단 카테고리 영역  */
 .category {
+	height: 22rem;
 	background-color: var(--primary-color);
 	padding: 3rem;
 	display: flex;
@@ -17,7 +20,9 @@
 	}
 }
 
+/* 메인 중앙 타이틀 영역  */
 .title {
+	height: 22rem;
 	background-color: #ccc;
 	text-align: center;
 	padding: 7rem 5% 5rem;
@@ -41,10 +46,13 @@
 	}
 }
 
+/* 메인에서 타이틀 옆 키컬러박스  */
 .deco {
+	height: 22rem;
 	background-color: var(--primary-color);
 }
 
+/* 메인 하단 서브카테고리 영역  */
 .subCategory {
 	background-color: var(--home-bg2-color);
 	padding: 3rem 4rem;
@@ -65,7 +73,9 @@
 	}
 }
 
+/* 메인 하단 이미지 영역  */
 .right {
+	/* height: calc(100vh - 3.5rem - 22rem); */
 	background-color: var(--home-bg2-color);
 
 	.thumbnail {
@@ -80,14 +90,51 @@
 	}
 }
 
+.content {
+	width: 100%;
+	height: calc(100vh - 3.5rem - 22rem);
+	overflow-y: auto;
+
+	> div {
+		width: 100%;
+		height: 100%;
+
+		overflow-y: auto;
+
+		/* safari */
+		scrollbar-width: thin;
+		scrollbar-color: var(--primary-color) white;
+
+		/* chrome */
+		&::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: var(--primary-color);
+			border-radius: 10px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: #fff;
+		}
+
+		font-size: 2rem;
+	}
+}
+
+/* 최대너비 1600px 이하 레이아웃  */
 @media screen and (max-width: 1600px) {
-	.sublayout {
+	.layout {
 		height: auto;
+	}
+	.content {
+		height: calc(100vh - 22rem);
 	}
 }
 
 @media screen and (max-width: 1280px) {
-	.sublayout {
+	.layout {
 		grid-template-columns: auto 25rem;
 	}
 
@@ -116,65 +163,50 @@
 }
 
 @media screen and (max-width: 767px) {
-	.sublayout {
-		grid-template-columns: 25rem auto minmax(auto, 25rem);
-		grid-template-rows: 22rem 22rem auto;
+	.layout {
+		grid-template-columns: minmax(auto, 70%) minmax(auto, 25rem);
+		grid-template-rows: 22rem auto;
 	}
 
 	.title {
-		grid-column: 1/3;
+		grid-column: 1;
 		h3 {
 			font-size: 2.4rem;
 		}
 	}
 
+	.deco {
+		display: none;
+	}
+
 	.content {
 		grid-column: 1/-1;
 		grid-row: 2/-1;
+		height: auto;
 	}
 
 	.right {
-		grid-column: 3;
-		grid-row: 1/3;
+		grid-column: 2;
+		grid-row: 1;
 
 		.thumbnail {
 			height: 100%;
 
 			img {
-				object-position: top center;
+				object-position: center;
 			}
 		}
 	}
 }
 
 @media screen and (max-width: 480px) {
-	.sublayout {
-		grid-template-columns: 25rem auto minmax(auto, 25rem);
-		grid-template-rows: 22rem 22rem auto;
-	}
+}
 
-	.title {
-		grid-column: 1/3;
-		h3 {
-			font-size: 2.4rem;
-		}
-	}
+@media screen and (orientation: landscape) {
+}
 
+@media (pointer: coarse) {
 	.content {
-		grid-column: 1/-1;
-		grid-row: 2/-1;
-	}
-
-	.right {
-		grid-column: 3;
-		grid-row: 1/3;
-
-		.thumbnail {
-			height: 100%;
-
-			img {
-				object-position: top center;
-			}
-		}
+		height: 100vmax;
 	}
 }

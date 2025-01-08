@@ -6,7 +6,7 @@
 
 .history {
 	height: 100%;
-	max-height: calc(100vh - 3.5rem - 22rem);
+	/* max-height: calc(100vh - 3.5rem - 22rem); */
 
 	padding: 3rem;
 
@@ -41,13 +41,20 @@
 	}
 
 	.history {
-		min-height: calc(100vh - 12.5rem - 22rem);
+		/* min-height: calc(100vh - 12.5rem - 22rem); */
 	}
 }
 
 @media screen and (max-width: 1280px) {
 	.history__sublayout {
 		grid-template-columns: auto 25rem;
+	}
+}
+
+@media (orientation: landscape) and (max-width: 1280px) {
+	.hisoty {
+		min-height: auto;
+		max-height: none;
 	}
 }
 
