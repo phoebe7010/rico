@@ -7,6 +7,25 @@
 	grid-template-columns: repeat(5, 1fr);
 	gap: 5%;
 
+	overflow-y: auto;
+	/* safari */
+	scrollbar-width: thin;
+	scrollbar-color: var(--primary-color) white;
+
+	/* chrome */
+	&::-webkit-scrollbar {
+		width: 1rem;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: var(--primary-color);
+		border-radius: 1rem;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #fff;
+	}
+
 	.brand__thumbnail {
 		display: grid;
 		place-content: center;
