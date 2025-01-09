@@ -76,9 +76,6 @@
 /* 1600px 최대너비시 */
 @media screen and (max-width: 1600px) {
 	.company {
-		/* max-height: calc(100vh - 12.5rem - 22rem); */
-		/* height: calc(100vh - 12.5rem - 22rem); */
-
 		.slide {
 			height: calc(100vh - 44rem);
 		}
@@ -88,10 +85,6 @@
 @media screen and (max-width: 1280px) {
 	.layout {
 		grid-template-columns: auto 25rem;
-	}
-
-	.company {
-		/* min-height: calc(100vh - 3.5rem - 9rem - 22rem); */
 	}
 }
 
@@ -162,7 +155,12 @@
 
 @media (pointer: coarse) {
 	.content {
-		height: 100vmin;
+		min-height: 100vmin;
+		height: auto;
+
+		> div {
+			height: auto;
+		}
 	}
 
 	.content {

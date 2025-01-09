@@ -1,20 +1,15 @@
-.catalog__sublayout {
-	display: grid;
-	grid-template-columns: 25rem auto 25rem;
-	grid-template-rows: 22rem auto;
-}
-
 .catalog {
-	height: 100%;
-	min-height: calc(100vh - 3.5rem - 22rem);
+	/* height: 100%;
+	min-height: calc(100vh - 3.5rem - 22rem); */
 
 	display: flex;
 	gap: 3rem;
+
 	padding: 3rem;
 
 	.card {
 		display: flex;
-		flex: 1;
+
 		gap: 1rem;
 
 		.card__info {
@@ -29,57 +24,30 @@
 				font-size: 1.5rem;
 			}
 		}
+		.card__thumbnail img {
+			max-height: 30rem;
+		}
 	}
 }
 
 @media screen and (max-width: 1600px) {
-	.catalog__sublayout {
-		height: auto;
-	}
-
 	.catalog {
 		min-height: calc(100vh - 12.5rem - 22rem);
 	}
 }
 
 @media screen and (max-width: 1280px) {
-	.catalog__sublayout {
-		grid-template-columns: auto 25rem;
-	}
-
 	.catalog {
 		max-height: none;
 		flex-direction: column;
+		place-content: space-evenly;
 	}
 }
 
 @media screen and (max-width: 767px) {
-	.catalog__sublayout {
-		grid-template-columns: minmax(auto, 70%) minmax(auto, 25rem);
-	}
-
-	.title {
-		grid-column: 1;
-	}
-
-	.deco {
-		display: none;
-	}
-
 	.catalog {
 		min-height: auto;
 		place-content: start center;
 		padding-bottom: 10rem;
-	}
-
-	.right {
-		grid-column: 2;
-		grid-row: 1;
-
-		.thumbnail {
-			img {
-				object-position: bottom left;
-			}
-		}
 	}
 }
