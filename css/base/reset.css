@@ -88,3 +88,38 @@ button {
 .kor {
 	font-family: 'Noto Sans KR', serif;
 }
+
+.swiper {
+	position: relative;
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		&::after {
+			display: none;
+		}
+	}
+
+	.swiper-button-prev {
+		position: absolute;
+		left: -4rem;
+		transition: 0.5s;
+		width: 3rem;
+		height: 3rem;
+	}
+	.swiper-button-next {
+		position: absolute;
+		right: -4rem;
+		transition: 0.5s;
+		width: 3rem;
+		height: 3rem;
+	}
+
+	&:hover {
+		.swiper-button-prev {
+			left: 2rem;
+		}
+		.swiper-button-next {
+			right: 2rem;
+		}
+	}
+}
