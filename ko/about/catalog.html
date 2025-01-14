@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="images/common/favicon.ico" type="image/x-icon">
+  <title>CATALOG</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- 중요 CSS 미리 로드 -->
+  <!-- <link rel="preload" href="./css/base/variables.css" as="style" /> -->
+
+  <link rel="stylesheet" href="./css/base/reset.css">
+  <link rel="stylesheet" href="./css/base/variables.css">
+  <link rel="stylesheet" href="./css/base/common.css">
+  <link rel="stylesheet" href="./css/base/subpage.css">
+  <link rel="stylesheet" href="./css/pages/catalog.css">
+
+
+  <!-- 메인 JS 파일 -->
+  <script src="./js/base/layout.js" defer></script>
+  <script src="./js/base/common.js" defer></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <header class="header"></header>
+
+    <nav class="language"></nav>
+
+    <main class="layout">
+      <div class="category">
+        <h2>ABOUT US</h2>
+      </div>
+
+      <div class="title">
+        <h3>ORGANIZATION CHART</h3>
+        <p>COMPANY SYSTEM</p>
+      </div>
+
+      <div class="deco"></div>
+
+      <div class="subCategory">
+        <nav>
+          <ul>
+            <li><a href="">CEO' MESSAGE</a></li>
+            <li><a href="">COMPANY</a></li>
+            <li><a href="">ORGANIZATION CHART</a></li>
+            <li><a href="">HISTORY</a></li>
+            <li class="on"><a href="">CATALOG</a></li>
+          </ul>
+        </nav>
+      </div> <!-- subCategory end -->
+
+      <div class="content">
+        <!-- 컨텐츠 부분  -->
+        <div class="catalog">
+          <div class="card">
+            <div class="card__thumbnail">
+              <img src="images/about/catalog/catalog01.jpg" alt="">
+            </div>
+            <div class="card__info">
+              <p class="description">리코블라인드</p>
+              <h4>오션뷰 제품 종합 카달로그</h4>
+              <a href="#"><img src="images/about/catalog/button.jpg" alt="다운로드"></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__thumbnail">
+              <img src="images/about/catalog/catalog02.jpg" alt="">
+            </div>
+            <div class="card__info">
+              <p class="description">2018년</p>
+              <h4>에어케어 BRAND BOOK</h4>
+              <a href="#"><img src="images/about/catalog/button.jpg" alt="다운로드"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="thumbnail">
+          <img src="./images/about/catalog/catalog_right.jpg" alt="">
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer"></footer>
+
+    <!-- mobile 메뉴  -->
+    <aside class="mobile"></aside>
+  </div> <!-- container end -->
+
+
+</body>
+
+</html>
